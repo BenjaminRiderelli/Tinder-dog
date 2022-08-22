@@ -1,0 +1,135 @@
+body{
+    background: #F6F7FB;
+    margin:0 auto;
+    padding:0;
+}
+
+
+img{
+    margin:0;
+    padding:0;
+}
+
+header{
+    margin:0 auto;
+    padding:.5em 1em;
+    width:400px;
+    height:50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: purple; */
+}
+
+main{
+    padding:0;
+    margin:0 auto;
+    height:400px;
+    width:400px;
+}
+
+
+.icon-img{
+    height:50%;
+    
+}
+
+.like-img{
+    display:none;
+    position:absolute;
+    width:150px;
+    z-index: 10;
+    top: 10%;
+    left: 5%;
+    transform: rotate(-40deg)
+}
+
+.nope-img{
+    display:none;
+    position:absolute;
+    width:150px;
+    z-index: 10;
+    top: 10%;
+    right: 5%;
+    transform: rotate(40deg)
+}
+
+
+.dog-img{
+    width:100%;
+    border-radius: 15px;
+}
+
+.dog-title{
+  font-weight: 600;
+  font-size:25px;
+  color:white;
+  position:absolute;
+  bottom:6%;
+  left:5%;
+}
+
+.dog-bio{
+  font-weight: 300;
+  font-size:15px;
+  color:#B7B7B7;
+  position:absolute;
+  bottom:3%;
+  left:5%;
+}
+
+
+.container{
+    width:400px;
+    margin:0 auto;
+    position:relative;
+}
+
+.avatar-container{
+    margin-top:0;
+    padding:0;
+}
+
+.img-container{
+    margin-bottom:0;
+
+}
+
+
+.buttons-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:50%;
+    padding:0;
+    margin:0 auto;
+    width:100%;
+    height:80px;
+
+}
+
+.action-btn{
+    
+    height:85%;
+    padding:1em;
+    margin:1em;
+    border: .5px solid #F6F7FB;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    border-radius: 100%;
+}
+
+.green:hover,
+.green:focus{
+  outline:0;
+  border: .5px solid #DBFFF4;
+  background: #DBFFF4;
+  box-shadow: 0px 10px 20px #CCF1E6;
+}
+
+.red:hover,
+.red:focus{
+  outline:0;
+  border: .5px solid #FFE7EF;
+  background: #FFE7EF;
+  box-shadow: 0px 10px 20px #EDD9DF;
+}
