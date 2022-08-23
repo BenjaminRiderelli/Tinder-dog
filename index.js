@@ -26,12 +26,9 @@ crossBtn.addEventListener('click', function(){
 
 
 
-function likeCheck(dog){
-        
-    if (dog.hasBeenLiked) {
+function likeCheck(dog){      
      swipe == dogsDataLength ? swipe = 0 : swipe += 1 
      document.getElementById("liked").style.display="block"
-    }
 }
 
 function nopeCheck(dog){
