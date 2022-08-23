@@ -5,7 +5,6 @@ import {dogsData} from '/data.js'
 
 const heartBtn = document.getElementById("heart-btn")
 const crossBtn = document.getElementById("cross-btn")
-const firstDog = new Dog(dogsData[0])
 const avatarContainer = document.getElementById("avatar-container")
 const dogsDataLength = (dogsData.length) - 1
 let swipe = 0
@@ -14,24 +13,24 @@ let testDog = new Dog(dogsData[swipe])
 heartBtn.addEventListener('click', function(){
     testDog.hasBeenLiked = true
     testDog.hasBeenSwiped = true
-    likeCheck(testDog)
+    likeCheck()
     setTimeout(render, 500)    
 })
 
 crossBtn.addEventListener('click', function(){
     testDog.hasBeenSwiped = true  
-    nopeCheck(testDog)
+    nopeCheck()
     setTimeout(render, 500)
 })
 
 
 
-function likeCheck(dog){      
+function likeCheck(){      
      swipe == dogsDataLength ? swipe = 0 : swipe += 1 
      document.getElementById("liked").style.display="block"
 }
 
-function nopeCheck(dog){
+function nopeCheck(){
      swipe == dogsDataLength ? swipe = 0 : swipe += 1 
      document.getElementById("nope").style.display="block"     
 }
